@@ -6,7 +6,7 @@
 #    By: ttatsuno <ttatsuno@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/24 20:22:59 by ttatsuno          #+#    #+#              #
-#    Updated: 2026/08/24 20:24:24 by ttatsuno         ###   ########.fr        #
+#    Updated: 2026/08/26 22:32:30 by ttatsuno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,5 +19,4 @@ if __name__ == "__main__":
     print(f"Plant: {name}")
     print(f"Height: {height}cm")
     print(f"Age: {age} days")
-    print()
     print("=== End of Program ===")
