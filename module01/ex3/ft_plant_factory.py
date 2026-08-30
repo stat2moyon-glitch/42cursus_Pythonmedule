@@ -6,7 +6,7 @@
 #    By: ttatsuno <ttatsuno@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/26 21:40:16 by ttatsuno          #+#    #+#              #
-#    Updated: 2026/08/26 22:56:24 by ttatsuno         ###   ########.fr        #
+#    Updated: 2026/08/30 22:40:55 by ttatsuno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ class Plant:
 		self.height = height
 		self.age_days = age_days
 
-	def grow(self, amout: float = 1.0) -> None:
+	def grow(self, amount: float = 1.0) -> None:
 		self.height = round(self.height + amount, 1)
 
 	def age(self, days: int = 1) -> None:
