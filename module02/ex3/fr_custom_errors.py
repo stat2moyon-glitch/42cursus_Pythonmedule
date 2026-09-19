@@ -11,8 +11,8 @@ def check_plant(name: str) -> None:
 	if name == "":
 		raise PlantError()
 
-def check_Water(num: int) -> None:
-	if num < 0:
+def check_Water(mount: int) -> None:
+	if amount < 0:
 		raise WaterError()
 
 
@@ -25,5 +25,11 @@ def test_custom_errors() -> None:
 		check_plant("")
 	except PlantError as error:
 		print(error)
+	try:
+		check_water(-1)
 	except WaterError as error:
-			print(error)
+		print(error)
+	try:
+		check_plant("")
+	except GardenError as error:
+		print(error)
