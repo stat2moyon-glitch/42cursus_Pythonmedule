@@ -1,5 +1,6 @@
 class GardenError(Exception):
-	pass
+	def __init__(self, message: str = "Unknown garden error") -> None:
+		super().__init__(message)
 
 class PlantError(GardenError):
 	def __init__(self, message: str = "Unknown plant error") -> None:
@@ -32,6 +33,14 @@ def test_custom_errors() -> None:
 		print(error)
 	try:
 		check_plant("")
+	except GardenError as error:
+		print(error)
+	try:
+		raise GardenError()
+	except GardenError as error:
+		print(error)
+	try:
+		check_Water(-1)
 	except GardenError as error:
 		print(error)
 
