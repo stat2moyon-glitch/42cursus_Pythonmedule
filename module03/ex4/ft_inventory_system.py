@@ -1,8 +1,3 @@
-sys.argv, len(), print(), sum(), list(), round(),
-dict.keys(), dict.values(), dict.update()
-python3 ft_inventory_system.py \
-sword:1 potion:5 shield:2 armor:3 helmet:1 sword:2 hello key:value
-
 import sys
 
 def parse_inventory(arguments: list[str]) -> dict[str,int]:
