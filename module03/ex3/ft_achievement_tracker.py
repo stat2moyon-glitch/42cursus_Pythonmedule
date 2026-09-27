@@ -1,8 +1,5 @@
 import random
 
-len(), print(), random.*, 
-set(), set.union(), set.intersection(), set.difference()
-
 ACHIVEMENTS = [
     "Hello World",
     "Norminette Survivor",
